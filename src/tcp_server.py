@@ -5,9 +5,11 @@ sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)  # Allows reusing the same port
 
 # Bind the socket
-server_name = '127.0.0.1'
-server_address = (server_name, 10001)
-print(f"Starting up on {server_name} port {server_address[1]}")
+server =input("enter the ip: ")
+port =input("enter the port: ")
+
+server_address = (server,port)
+print(f"Starting up on {server} port {port}")
 sock.bind(server_address)
 sock.listen(1)
 
