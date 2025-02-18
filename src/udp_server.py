@@ -4,7 +4,9 @@ import socket
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
 # Bind the socket to an address and port
-server_address = ('127.0.0.1', 10001)
+ip = input("enter the ip: ")
+port= input("enter the port: ")
+server_address = (ip,int(port))
 sock.bind(server_address)
 
 print(f"UDP Server listening on {server_address}")
