@@ -2,8 +2,9 @@ import socket
 
 # Create a UDP socket
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-
-server_address = ('127.0.0.1', 10001)
+host =input("enter the host: ")
+port = int(input("enter the port: "))
+server_address = (host,port)
 
 try:
     while True:

@@ -7,7 +7,7 @@ port =input("enter the port: ")
 
 # Starting Server
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-server.bind((host, port))
+server.bind((host, int(port)))
 server.listen()
 
 # Lists For Clients and Their Nicknames

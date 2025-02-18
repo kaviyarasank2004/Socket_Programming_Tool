@@ -6,13 +6,10 @@ import socket
 ascii_banner = pyfiglet.figlet_format("port scanner")
 print(ascii_banner)
 
-if len(sys.argv)== 2 :
-    target = socket.gethostbyname(sys.argv[1])
-else:
-    print("Invalid amount of argument")
+target = input("enter the host ")
 
 print("-" * 50)
-print("scanning target"+target)
+print("scanning target"+socket.gethostbyname(target))
 print("-" * 50)
 
 #checking for open ports
