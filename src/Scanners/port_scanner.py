@@ -15,7 +15,7 @@ print("-" * 50)
 print("scanning target"+target)
 print("-" * 50)
 
-
+#checking for open ports
 try:
     for port in range(1,65535):
         s = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
@@ -25,6 +25,7 @@ try:
         if result ==0:
             print("port->{} is open ".format(port))
         s.close()
+#handling the errors
 except KeyboardInterrupt:
     print("\n exiting program")
     sys.exit()
