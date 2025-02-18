@@ -14,15 +14,15 @@ def main():
         choice = input("Enter your choice: ")
 
         if choice == "1":
-            os.system("python port_scanner.py")
+            os.system("python3 port_scanner.py")
         elif choice == "2":
             os.system("python3 banner_scanner.py")
         elif choice == "3":
-            os.system("python tcp_server.py & python tcp_client.py")
+            os.system("python3 tcp_server.py & python tcp_client.py")
         elif choice == "4":
-            os.system("python udp_server.py & python udp_client.py")
+            os.system("python3 udp_server.py & python udp_client.py")
         elif choice == "5":
-            os.system("python chat_server.py & python chat_client.py")
+            os.system("python3 chat_server.py & python chat_client.py")
         elif choice == "6":
             break
         else:
