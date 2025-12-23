@@ -14,6 +14,6 @@ Ensure you have Python 3 installed. Clone the repository and install dependencie
 
 ```bash
 git clone https://github.com/kaviyarasank2004/Socket_Programming_Tool
-cd Socket_Tool  # Change this if your folder name is different
+cd Socket_Tool  
 pip install -r requirements.txt
 python3 main.py
